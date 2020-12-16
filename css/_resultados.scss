@@ -1,0 +1,71 @@
+.resultados {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 1070px;
+    label{
+        display: block;
+        color:  #595959;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    input{
+        border: 2px solid #E3655B;
+        color: #95B8D1;
+        font-size: 16px;
+        height: 50px;
+        width: 100%;
+        padding: 5px 12px;
+        border-radius: 5px;
+        font-family: 'Lato', sans-serif;
+    }
+    .totales{
+        div{
+            display: flex;
+            justify-content: space-between;
+            .total-compras{
+                padding-right: 10px;
+            }
+        }
+        
+        label{
+            color: #E3655B;
+        }
+        i{
+            margin-right: 5px;
+            font-size: 16px;
+        }
+        .total-compras, .total-primera-cuota{
+            color: #E3655B;
+            align-items: baseline;
+            width: 100x;
+        }
+        #totalCompras, #totalPrimeraCuota{
+            background-color: #ffffff;
+            color: #E3655B;
+            font-size: 16px;
+        }
+    } 
+    .grupo-tabla{
+        display: none;
+        .tabla{
+            width: 100%;
+            text-align: left;
+            border: 2px solid #595959;
+            margin: 10px 0 10px 0;
+            th,td{
+                width: 25%;
+                padding: 10px;
+                vertical-align: top;
+            }
+            th{
+                background: #C6DDF0;
+                border-bottom: 2px solid #595959;
+            }
+        }
+    }
+}
+
