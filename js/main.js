@@ -134,14 +134,20 @@ function borrar(){
 
 function recuperoCompras() {
 	let guardado = JSON.parse(localStorage.getItem('Compras'))
-	if (guardado.length > 0) {
-		for (let i = 0; i < guardado.length; i++) {
-			listaCompras += '<tr><td>' + guardado[i].nomCompra + '</td><td>' + guardado[i].valor + '</td><td>' + guardado[i].ncuotas + '</td><td>' + guardado[i].pagar + '</td></tr>'
-			$('#tbody').html(listaCompras)
-            
+	
+	if (guardado != null && guardado.length > 0) {
+
+        for (let i = 0; i < guardado.length; i++) {
+
+            listaCompras += '<tr><td>' + guardado[i].nomCompra + '</td><td>' + guardado[i].valor + '</td><td>' + guardado[i].ncuotas + '</td><td>' + guardado[i].pagar + '</td></tr>'
+
+            $('#tbody').html(listaCompras)
+
         }    
-	}
-	mostrarTabla.show()	
+
+        mostrarTabla.show() 
+
+    }	
 }
  
 
